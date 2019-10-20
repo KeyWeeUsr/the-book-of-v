@@ -7,6 +7,7 @@ Installation
 Prerequisities
 --------------
 
+* Internet connection
 * Git (2.17.1)
 * Docker (19.03.2)
 
