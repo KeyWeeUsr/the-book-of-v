@@ -2,4 +2,4 @@ Appendix
 ========
 
 #. :ref:`Calculator test cases`
-#. :ref:`Hello, world`
+#. :doc:`Hello, world! <hello-world>`
