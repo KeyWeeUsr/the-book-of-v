@@ -157,3 +157,23 @@ program with a warning for which we'll use |panic|_.
 
 .. include:: vsource/calculator-main-check-stack.v
    :code: v
+
+Now let's append the console arguments on the stack if they are not one of
+the operator functions' names we added to the arrays. By default any value from
+the console arguments is a |string_type|_ which means we are missing one step.
+We need to convert the value to ``f32`` before appending it. By looking at the
+|string_impl|_ we can find its function for conversion |string_f32|_ which we
+should use before trying to append the value on the stack.
+
+Once the values are converted and on the stack, we need to check if there are
+at least two and in the next console argument is an operator function's name
+pop the values into ``left`` and ``right`` variables which will be used for
+printing out the result.
+
+.. include:: vsource/calculator-main-calc-values.v
+   :code: v
+
+Now we can check some basic instructions for our calculator this way:
+
+.. include:: vsource/calculator-main-calc-values-output.v
+   :code: v

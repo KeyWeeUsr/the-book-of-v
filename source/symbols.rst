@@ -15,6 +15,12 @@
 .. _string_type: https://vlang.io/docs#strings
 .. |string_type| replace:: ``string``
 
+.. _string_impl: https://github.com/vlang/v/blob/333f0ab89f22846e1023d1ab6b1deec5fde592ad/vlib/builtin/string.v#L46
+.. |string_impl| replace:: ``string`` implementation
+
+.. _string_f32: https://github.com/vlang/v/blob/333f0ab89f22846e1023d1ab6b1deec5fde592ad/vlib/builtin/string.v#L193
+.. |string_f32| replace:: ``string.f32(s string)``
+
 .. _array_type: https://vlang.io/docs#arrays
 .. |array_type| replace:: ``array``
 
