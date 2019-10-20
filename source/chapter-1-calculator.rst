@@ -106,6 +106,9 @@ to the executable is added as the next argument.
     ...
     ["./calc", "argument"]
 
+Pseudo-stack with |array_type|_
+-------------------------------
+
 Once we can access the console arguments, we can quickly implement so called
 |rpn|_ with a |for_loop|_ and |if_cond|_. First we skip the executable path:
 
@@ -122,6 +125,7 @@ specify the type of all values in it as ``<name> := []<type>``.
 
 After we use a :doc:`keyword <keywords>` ``mut``, we mark the variable as
 editable and can use ``<<`` operator for the array to append a new value to it.
+
 Currently there is no quick way for popping the last element from an array
 while removing it at the same time, therefore we will access the last element
 by its position in angle brackets (``array[idx]``) in the array and then use
