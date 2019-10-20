@@ -11,3 +11,15 @@
 
 .. _string_type: https://vlang.io/docs#strings
 .. |string_type| replace:: ``string``
+
+.. _array_type: https://vlang.io/docs#arrays
+.. |array_type| replace:: ``array``
+
+.. _array_impl: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/builtin/array.v#L9
+.. |array_impl| replace:: ``array`` implementation
+
+.. _for_loop: https://vlang.io/docs#for
+.. |for_loop| replace:: ``for`` loop
+
+.. _if_cond: https://vlang.io/docs#if
+.. |if_cond| replace:: ``if`` conditional

@@ -1,5 +1,8 @@
 .. include:: symbols.rst
 
+.. _rpn: https://en.wikipedia.org/wiki/Reverse_Polish_notation
+.. |rpn| replace:: Reverse Polish notation
+
 Chapter I: Calculator
 =====================
 
@@ -87,4 +90,32 @@ Now you should see even the array of arguments passed to the calculator
 program the same as below:
 
 .. include:: vsource/calculator-basic-ops-float-withinput-output.v
+   :code: v
+
+The first argument will always be a name of the executable that's running,
+which in this case means ``./calc``, and anything other added after the path
+to the executable is added as the next argument.
+
+.. code:: shell
+
+    # call
+    v run calc.v argument
+    ./calc argument
+
+    # output
+    ...
+    ["./calc", "argument"]
+
+Once we can access the console arguments, we can quickly implement so called
+|rpn|_ with a |for_loop|_ and |if_cond|_. First we skip the executable path:
+
+.. include:: vsource/strip-exe-path.v
+   :code: v
+
+To implement |rpn|_ we will use an |array_type|_ for storing the ``f32``.
+To create a variable V uses simple ``<name> := <value>`` syntax e.g.
+``number = 1``, however for an array we need to go a little bit further and
+specify the type of all values in it as ``<name> := []<type>``.
+
+.. include:: vsource/array-f32-immutable-assign.v
    :code: v
