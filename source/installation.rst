@@ -32,3 +32,17 @@ Download it with cloning the repo first:
     git clone https://github.com/vlang/v
     # or
     git clone git@github.com:vlang/v
+
+Then proceed to building the Docker image locally. Once it's built, create
+a container and enter it:
+
+.. code:: shell
+
+    docker build --tag vlang .
+    docker run --interactive --tty --name vlang-cont vlang
+
+Your console should now look similar to this:
+
+.. code:: shell
+
+    root@16b5a9d05074:/opt/vlang#
