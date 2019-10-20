@@ -1,9 +1,9 @@
-:orphan:
+.. include:: symbols.rst
 
 Types
 =====
 
-As per the `official V documentation <https://vlang.io/docs#btypes>`.
+As per the `official V documentation <https://vlang.io/docs#btypes>`_.
 
 Numeric
 -------
