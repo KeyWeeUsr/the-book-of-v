@@ -8,6 +8,11 @@ the language or write small scripts.
 REPL
 ----
 
+Although not in the way as it is for Python or JavaScript, this
+interpreter-like mode takes your code and in the background writes it to
+a temporary ``.v`` file which is then compiled and run. V then returns the
+output back to you in the console.
+
 .. code:: shell
 
     v  # or v runrepl
@@ -32,6 +37,14 @@ commands:
       clear                  Clears the screen.
 
 .. note::
+
+   Currently there is a hidden step between compiling ``.v`` file and running
+   the final program. V requires a C compiler present on the system and
+   attempts to compile ``.v`` file to ``.c`` which is then compiled to machine
+   code a CPU understands. After that V runs the binary produced by the C
+   compiler and retrieves output back.
+
+.. warning::
 
    Currently there is no support for command history, therefore arrows,
    Control-P, Alt-P or any combination of them will result in an escape code
@@ -76,7 +89,19 @@ open that file, compile it and produce a same-named binary.
 
 .. include:: hello-world.rst
 
+Compile with:
+
+.. include:: hello-world-compile.rst
+
 .. note::
 
    In case you can't execute the output file try changing the file into
    an executable with ``chmod +x <file>``.
+
+Runner
+------
+
+Similar to REPL mode, this mode in the background compiles and attempts to run
+your file.
+
+.. include:: hello-world-run.rst
