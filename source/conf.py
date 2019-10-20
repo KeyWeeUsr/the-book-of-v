@@ -48,6 +48,15 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+html_theme_options = dict(
+    fixed_sidebar=True,
+    body_text_align="justify",
+    show_relbar_bottom=True,
+    donate_url="https://paypal.me/peterbadida",
+    extra_nav_links={
+        f"Version: {release}": "#"
+    }
+)
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
