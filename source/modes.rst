@@ -66,6 +66,8 @@ In its simplest form it can be used as a calculator:
     >>> print(1 + 1)
     2
 
+For more examples check :ref:`Calculator test cases`.
+
 Compiler
 --------
 
