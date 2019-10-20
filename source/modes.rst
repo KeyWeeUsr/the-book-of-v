@@ -31,6 +31,21 @@ commands:
       Ctrl-C, Ctrl-D, exit   Exits the REPL.
       clear                  Clears the screen.
 
+.. note::
+
+   Currently there is no support for command history, therefore arrows,
+   Control-P, Alt-P or any combination of them will result in an escape code
+   printed to the console.
+
+   .. code:: v
+
+       >>> ^[[A
+       >>> ^P
+       >>> ^[p
+       >>> ^[^P
+       >>> ^[[1;5A
+       >>> ^[[1;3A
+
 Compiler
 --------
 
