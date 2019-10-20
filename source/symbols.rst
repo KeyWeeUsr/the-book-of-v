@@ -18,6 +18,9 @@
 .. _array_impl: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/builtin/array.v#L9
 .. |array_impl| replace:: ``array`` implementation
 
+.. _array_len: https://github.com/vlang/v/blob/b73387647cdc1445a9c8a0ea000d8f1fae4d02f8/vlib/builtin/array.v#L14
+.. |array_len| replace:: ``array.len`` attribute
+
 .. _array_delete: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/builtin/array.v#L107
 .. |array_delete| replace:: ``array.delete()``
 

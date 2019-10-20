@@ -139,3 +139,6 @@ by its position in angle brackets (``array[idx]``) in the array and then use
 
 .. include:: vsource/array-f32-push-pop.v
    :code: v
+
+As you can see, an |array_type|_ has an |array_len|_. It's changed on each
+resizing manipulation of |array_type|_.
