@@ -46,6 +46,26 @@ commands:
        >>> ^[[1;5A
        >>> ^[[1;3A
 
+By default you have an access to the `builtin
+<https://github.com/vlang/v/tree/master/vlib/builtin>`_ module
+
+.. code:: v
+
+    >>> println("Hello, world!")
+    Hello, world!
+
+    // or even
+
+    >>> print("Hello, world!")
+    Hello, world!
+
+In its simplest form it can be used as a calculator:
+
+.. code:: v
+
+    >>> print(1 + 1)
+    2
+
 Compiler
 --------
 
