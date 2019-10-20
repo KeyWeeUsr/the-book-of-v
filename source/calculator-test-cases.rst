@@ -1,3 +1,5 @@
+:orphan:
+
 .. _Calculator test cases:
 
 Calculator test cases

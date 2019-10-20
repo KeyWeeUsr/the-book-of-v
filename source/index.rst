@@ -12,6 +12,7 @@ Welcome to The Book of V's documentation!
 
    installation
    modes
+   appendix
 
 
 Indices and tables
