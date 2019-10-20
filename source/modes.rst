@@ -19,6 +19,18 @@ REPL
     Use Ctrl-C or `exit` to exit
     >>>
 
+The console provides a simple ``help`` command that lists all available console
+commands:
+
+.. code:: shell
+
+    >>> help
+
+    V 0.1.21 b51b885
+      help                   Displays this information.
+      Ctrl-C, Ctrl-D, exit   Exits the REPL.
+      clear                  Clears the screen.
+
 Compiler
 --------
 
