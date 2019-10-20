@@ -10,6 +10,7 @@ Welcome to The Book of V's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   installation
 
 
 Indices and tables
