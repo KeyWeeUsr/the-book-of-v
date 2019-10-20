@@ -69,4 +69,6 @@ values can be fetched with the help of `compiler
 <https://github.com/vlang/v/tree/master/vlib/compiler>`_ module.
 
 In V you can use a module by *importing* it via ``import``
-:doc:`keyword <keywords>`
+:doc:`keyword <keywords>`. From that module we will need a public function
+|env_vflags_and_os_args|_ that returns an array of another kind of V
+:doc:`type <types>` - ``string``.
