@@ -17,4 +17,10 @@ REPL
     root@16b5a9d05074:/opt/vlang# v
     V 0.1.21 b51b885
     Use Ctrl-C or `exit` to exit
-    >>> 
+    >>>
+
+Compiler
+--------
+
+V executable when provided with an argument that contains a ``.v`` suffix will
+open that file, compile it and produce a same-named binary.
