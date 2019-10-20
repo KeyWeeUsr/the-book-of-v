@@ -1,5 +1,4 @@
-.. _println: https://vlang.io/docs#println
-.. |println| replace:: ``println(s string)``
+.. include:: symbols.rst
 
 Chapter I: Calculator
 =====================
