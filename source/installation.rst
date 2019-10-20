@@ -40,7 +40,7 @@ To ensure the same environment everywhere we'll use Docker and the default
 
    CMD [ "bash" ]
 
-Download it with cloning the repo first:
+Download it with cloning the repo first (currently ``b51b885``):
 
 .. code:: shell
 
