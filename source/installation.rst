@@ -1,6 +1,9 @@
 .. _v_github: https://github.com/vlang/v
 .. |v_github| replace:: V repository
 
+.. _docker_push_pull: https://docs.docker.com/ee/dtr/user/manage-images/pull-and-push-images/
+.. |docker_push_pull| replace:: pushing and pulling Docker images
+
 Installation
 ============
 
@@ -55,7 +58,7 @@ it's built, create a container and enter it:
 .. code:: shell
 
     docker build --tag vlang .
-    docker run --interactive --tty --name vlang-cont vlang
+    docker run --interactive --tty vlang
 
 Your console should now look similar to this:
 
@@ -70,3 +73,33 @@ a V installation:
 
     root@16b5a9d05074:/opt/vlang# v --version
     V 0.1.21 b51b885
+
+By default the whole environment is isolated, but that prevents us from adding
+or editing files from an editor that's not installed in the Docker image. For
+that we will use mounting of a host directory into the container so we can:
+
+#. Edit the files on the OS with an editor of own choice
+#. Compile and run them in a consistent and reproducible environment
+
+We will also use shortened flags for docker instead of writing e.g.
+``--interactive`` in full.
+
+.. code:: shell
+
+    docker run -i -t -v $(pwd):/opt/src -w /opt/src vlang
+
+This command will run the Docker container from ``vlang`` image in an
+``interactive`` mode, will allocate a ``tty`` for it, make visible
+the directory you are in (``pwd``) to the container at location ``/opt/src``
+and change the default working directory to the project location: ``/opt/src``.
+
+.. note::
+
+   Once you have built the Docker image, you can navigate to any folder on your
+   computer and run the command above. This is helpful if you have multiple
+   projects because it'll bring the consistent environemnt with you wherever
+   you go.
+
+   In case you make some changes to the ``Dockerfile``, it's nice to have it
+   always available even between multiple machines. You can do that with
+   |docker_push_pull|_.
