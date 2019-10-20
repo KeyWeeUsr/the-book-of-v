@@ -73,3 +73,21 @@ Compiler
 
 V executable when provided with an argument that contains a ``.v`` suffix will
 open that file, compile it and produce a same-named binary.
+
+.. code:: v
+
+    // helloworld.v
+    println("Hello, world!")  // with a new like character \n
+    print("Hello, world!")    // without a new like character
+
+Compile with:
+
+.. code:: shell
+
+    v helloworld.v
+    ./helloworld
+
+.. note::
+
+   In case you can't execute the file try changing the file to an executable
+   with ``chmod +x helloworld``.
