@@ -119,3 +119,13 @@ specify the type of all values in it as ``<name> := []<type>``.
 
 .. include:: vsource/array-f32-immutable-assign.v
    :code: v
+
+After we use a :doc:`keyword <keywords>` ``mut``, we mark the variable as
+editable and can use ``<<`` operator for the array to append a new value to it.
+Currently there is no quick way for popping the last element from an array
+while removing it at the same time, therefore we will access the last element
+by its position in angle brackets (``array[idx]``) in the array and then use
+|array_delete|_ to remove it.
+
+.. include:: vsource/array-f32-push-pop.v
+   :code: v

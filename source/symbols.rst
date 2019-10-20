@@ -18,6 +18,9 @@
 .. _array_impl: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/builtin/array.v#L9
 .. |array_impl| replace:: ``array`` implementation
 
+.. _array_delete: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/builtin/array.v#L107
+.. |array_delete| replace:: ``array.delete()``
+
 .. _for_loop: https://vlang.io/docs#for
 .. |for_loop| replace:: ``for`` loop
 
