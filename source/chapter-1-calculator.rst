@@ -71,3 +71,5 @@ In V you can use a module by *importing* it via ``import``
 :doc:`keyword <keywords>`. From that module we will need a constant
 |os_args|_ that returns an array of another kind of V
 :doc:`type <types>` - ``string``.
+
+.. include:: calculator-basic-ops-float-withinput.rst
