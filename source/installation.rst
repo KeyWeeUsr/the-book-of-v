@@ -4,6 +4,20 @@
 Installation
 ============
 
+Prerequisities
+--------------
+
+* Git (2.17.1)
+* Docker (19.03.2)
+
+.. note::
+
+   These are versions are mine, but older ones should work too for simple
+   cloning and building Docker image.
+
+Cloning, compiling and building
+-------------------------------
+
 To ensure the same environment everywhere we'll use Docker and the default
 ``Dockerfile`` from the |v_github|_. Current version is fetched `this commit
 <https://github.com/vlang/v/blob/2880baa1bc2730519f3ce01e5f18b7a4363206b8/>`_.
@@ -33,8 +47,9 @@ Download it with cloning the repo first:
     # or
     git clone git@github.com:vlang/v
 
-Then proceed to building the Docker image locally. Once it's built, create
-a container and enter it:
+Then proceed to building the Docker image locally. During the building process
+one of the instructions is ``make`` which compiles V in that Docker image. Once
+it's built, create a container and enter it:
 
 .. code:: shell
 
