@@ -11,6 +11,7 @@ Welcome to The Book of V's documentation!
    :caption: Contents:
 
    installation
+   modes
 
 
 Indices and tables
