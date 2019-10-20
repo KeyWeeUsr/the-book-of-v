@@ -62,3 +62,12 @@ Input
 We can see the program computing results, but it's only for the hard-coded
 values directly in the ``calc.v`` file. This way we'd always need to rewrite
 our calculator.
+
+As you've already noticed when running a V program, V already knows what file
+you want to use by you providing a filename in the console. The same way V
+can use your value for compiling we can use it for computing results. The input
+values can be fetched with the help of `compiler
+<https://github.com/vlang/v/tree/master/vlib/compiler>`_ module.
+
+In V you can use a module by *importing* it via ``import``
+:doc:`keyword <keywords>`
