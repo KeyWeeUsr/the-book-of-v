@@ -1,3 +1,0 @@
-.. code:: v
-
-    // calc.v
