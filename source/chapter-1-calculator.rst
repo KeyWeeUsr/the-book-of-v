@@ -219,3 +219,9 @@ back to the console.
    Optimal result is having only a single element present on the stack, however
    it can happen that there will be an additional result if we provide more
    values than operands + 1.
+
+Here is the complete solution. Obviously it can be optimized and refactored
+further, but that I've kept for you to have fun.
+
+.. include:: vsource/calculator-complete.v
+   :code: v
