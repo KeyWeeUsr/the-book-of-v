@@ -207,3 +207,15 @@ function.
     3 1/3 *
     1
     = 1
+
+For that we need to rework the result handling a bit and put it on stack
+instead of printing out right away - switch ``println(operator(left, right))``
+to ``stack << operator(left, right)`` and then, after the computation is done,
+make sure there are no console arguments remaining. Then print the whole stack
+back to the console.
+
+.. note::
+
+   Optimal result is having only a single element present on the stack, however
+   it can happen that there will be an additional result if we provide more
+   values than operands + 1.
