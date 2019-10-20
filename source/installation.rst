@@ -46,3 +46,11 @@ Your console should now look similar to this:
 .. code:: shell
 
     root@16b5a9d05074:/opt/vlang#
+
+The environment you entered is an isolated part of your system which contains
+a V installation:
+
+.. code:: shell
+
+    root@16b5a9d05074:/opt/vlang# v --version
+    V 0.1.21 b51b885
