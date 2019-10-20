@@ -9,6 +9,9 @@ calculator. We start with a clean file in your favorite text editor:
 
 .. include:: calculator-empty.rst
 
+Operations
+----------
+
 We'll start with the addition. In V a function is created by ``fn``
 :doc:`keyword <keywords>` and a basic numeric :doc:`type <types>` "integer"
 is noted as ``int``:
@@ -50,3 +53,12 @@ Switch all types from ``int`` to ``f32`` and run the program again.
 
 .. include:: calculator-basic-ops-float.rst
 .. include:: calculator-basic-ops-float-output.rst
+
+Nice, we can see a proper result for ``1 / 2`` operation.
+
+Input
+-----
+
+We can see the program computing results, but it's only for the hard-coded
+values directly in the ``calc.v`` file. This way we'd always need to rewrite
+our calculator.
