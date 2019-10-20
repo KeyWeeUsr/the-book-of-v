@@ -28,3 +28,25 @@ Let's add a ``main()`` function that adds two integers and displays the output
 in the console. For that we'll use a built-in |println|_ function:
 
 .. include:: calculator-add-int.rst
+
+Now we can see the output. Let's include the rest of ``+-*/`` operations
+in the same way we created ``add()`` function:
+
+.. include:: calculator-basic-ops.rst
+
+As we call each of the functions to perform a basic operation, we will see
+this output. Noticed something strange?
+
+.. include:: calculator-basic-ops-output.rst
+
+``1 / 2`` is apparently ``0``. But why? Shouldn't the output be ``0.5``?
+
+Yes and no. For now we use ``int`` :doc:`type <types>` which does not allow
+a decimal mark and values after that symbol. There is a different
+:doc:`type <types>` that allows it written as ``f32`` (short for 32-bit
+floating-point number).
+
+Switch all types from ``int`` to ``f32`` and run the program again.
+
+.. include:: calculator-basic-ops-float.rst
+.. include:: calculator-basic-ops-float-output.rst
