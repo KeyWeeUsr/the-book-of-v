@@ -3,6 +3,9 @@
 .. _rpn: https://en.wikipedia.org/wiki/Reverse_Polish_notation
 .. |rpn| replace:: Reverse Polish notation
 
+.. _stack_wiki: https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29
+.. |stack_wiki| replace:: stack
+
 Chapter I: Calculator
 =====================
 
@@ -110,15 +113,18 @@ Pseudo-stack with |array_type|_
 -------------------------------
 
 Once we can access the console arguments, we can quickly implement so called
-|rpn|_ with a |for_loop|_ and |if_cond|_. First we skip the executable path:
+|rpn|_ with a |for_loop|_, |if_cond|_ and |stack_wiki|_.
+
+First we skip the executable path:
 
 .. include:: vsource/strip-exe-path.v
    :code: v
 
-To implement |rpn|_ we will use an |array_type|_ for storing the ``f32``.
-To create a variable V uses simple ``<name> := <value>`` syntax e.g.
-``number = 1``, however for an array we need to go a little bit further and
-specify the type of all values in it as ``<name> := []<type>``.
+To implement |rpn|_ we will use an |array_type|_ as a pseudo-|stack_wiki|_
+structure for storing the ``f32``. To create a variable V uses a simple
+``<name> := <value>`` syntax e.g. ``number := 1``, however for an array there is
+a catch. We need to go a little bit further and specify the type of all values
+in it as ``<name> := []<type>``.
 
 .. include:: vsource/array-f32-immutable-assign.v
    :code: v
