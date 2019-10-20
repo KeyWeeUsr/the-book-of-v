@@ -82,3 +82,9 @@ In V you can use a module by *importing* it via ``import``
 
 .. include:: vsource/calculator-basic-ops-float-withinput.v
    :code: v
+
+Now you should see even the array of arguments passed to the calculator
+program the same as below:
+
+.. include:: vsource/calculator-basic-ops-float-withinput-output.v
+   :code: v
