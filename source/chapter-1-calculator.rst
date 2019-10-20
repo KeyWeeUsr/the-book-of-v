@@ -142,3 +142,18 @@ by its position in angle brackets (``array[idx]``) in the array and then use
 
 As you can see, an |array_type|_ has an |array_len|_. It's changed on each
 resizing manipulation of |array_type|_.
+
+Back to the calculator code, we will use this pseudo-|stack_wiki|_ with
+manually pushing and removing items to implement |rpn|_ from console arguments.
+
+We'll create two array "buckets" for two categories of operators according to
+their precedence in an ordinary calculator.
+
+After that let's take care of an obvious error that might be raised - calling
+an operator function when there isn't enough values on the stack. We need to
+check the number of elements in the ``stack`` array by its ``len`` attribute
+as we did for popping the values from it in previous example and then exit the
+program with a warning for which we'll use |panic|_.
+
+.. include:: vsource/calculator-main-check-stack.v
+   :code: v

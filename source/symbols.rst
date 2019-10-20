@@ -3,6 +3,9 @@
 .. _println: https://vlang.io/docs#println
 .. |println| replace:: ``println(s string)``
 
+.. _panic: https://github.com/vlang/v/blob/b73387647cdc1445a9c8a0ea000d8f1fae4d02f8/vlib/builtin/builtin.v#L110
+.. |panic| replace:: ``panic(s string)``
+
 .. _module_os: https://github.com/vlang/v/tree/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/os
 .. |module_os| replace:: ``os``
 
