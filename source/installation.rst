@@ -5,7 +5,8 @@ Installation
 ============
 
 To ensure the same environment everywhere we'll use Docker and the default
-``Dockerfile`` from the |v_github|_. This is how it looks like now:
+``Dockerfile`` from the |v_github|_. Current version is fetched `this commit
+<https://github.com/vlang/v/blob/2880baa1bc2730519f3ce01e5f18b7a4363206b8/>`_.
 
 .. code:: Dockerfile
 
