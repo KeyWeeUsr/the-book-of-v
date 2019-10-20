@@ -12,6 +12,7 @@ The Book of V
 
    installation
    modes
+   chapter-1-calculator
    appendix
 
 
