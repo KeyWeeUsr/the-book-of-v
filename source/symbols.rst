@@ -26,3 +26,9 @@
 
 .. _if_cond: https://vlang.io/docs#if
 .. |if_cond| replace:: ``if`` conditional
+
+.. _map_type: https://vlang.io/docs#maps
+.. |map_type| replace:: ``map``
+
+.. _in_kw: https://vlang.io/docs#in
+.. |in_kw| replace:: ``in`` keyword
