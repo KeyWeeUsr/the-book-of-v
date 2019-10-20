@@ -177,3 +177,33 @@ Now we can check some basic instructions for our calculator this way:
 
 .. include:: vsource/calculator-main-calc-values-output.v
    :code: v
+
+Although usable, it's very limited as it does not provide any option for joined
+operations such as ``(1 + 2) * (3 / (4 + 5))``. First we need to convert this
+operation into |rpn|_ instructions so we can appropriately edit the ``main()``
+function.
+
+.. code::
+
+    (1 + 2) * (3 / (4 + 5)) = 1
+    1 2 + 3 4 5 + / *
+    1 2 add 3 4 5 add div mul
+
+    // each value is added on the stack as present
+    // computing starts immediately after an operator is present and the two
+    // closest values on the stack are popped in the reversed order i.e.
+    // right first, left second
+    1
+    1 2
+    1 2 +
+    3
+    3 3
+    3 3 4
+    3 3 4 5
+    3 3 4 5 +
+    3 3 9
+    3 3 9 /
+    3 1/3
+    3 1/3 *
+    1
+    = 1
