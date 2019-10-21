@@ -12,6 +12,13 @@ Numeric
 ~~~~~~~
 
 * ``int`` - 32-bit integer
+
+  .. warning::
+
+     Current implementation falls back to pure C ``int`` type which is
+     `not always 32-bit <https://stackoverflow.com/a/1231456/5994041>`_.
+     See `#2480 <https://github.com/vlang/v/issues/2480>`_ for more.
+
 * ``f32`` - 32-bit floating-point number (see |f32_impl|_)
 * ``string`` - A read-only, immutable, array of bytes encoded using UTF-8
   (see |string_type|_ for more)
