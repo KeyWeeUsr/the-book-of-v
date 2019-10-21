@@ -1,5 +1,8 @@
 .. include:: symbols.rst
 
+.. _hangman_desc: https://en.wikipedia.org/wiki/Hangman_(game)#Overview
+.. |hangman_desc| replace:: Hangman description
+
 Chapter II: Hangman
 ===================
 
@@ -15,3 +18,11 @@ action if necessary.
 
 .. include:: vsource/hangman-game-loop.v
    :code: v
+
+To define what should be present in the game loop we need to check the
+|hangman_desc|_. So according to that, the game loop should have a player
+always guessing either a letter or the whole hidden word until a player makes
+6 mistakes. In between the guesses the game should visibly note player's
+mistakes and unfold all places of a guessed letter. The game ends either by
+providing a correct word, guessing all letters correctly or at player's 6th
+mistake.
