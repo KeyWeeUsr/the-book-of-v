@@ -25,6 +25,7 @@ Feel free to buy me a coffee |donate|_
    installation
    modes
    chapter-1-calculator
+   chapter-2-hangman
    appendix
 
 
