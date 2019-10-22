@@ -12,6 +12,9 @@
 .. _os_args: https://github.com/vlang/v/blob/f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/os/os.v#L30
 .. |os_args| replace:: ``os.args``
 
+.. _os_get_line: https://github.com/vlang/v/blob/fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L540
+.. |os_get_line| replace:: ``os.get_line()``
+
 .. _int_impl: https://github.com/vlang/v/blob/f46b58b09d928bf71800d89a9ef563fd66e365d9/vlib/builtin/int.v
 .. |int_impl| replace:: ``int`` implementation
 

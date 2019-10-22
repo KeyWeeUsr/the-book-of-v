@@ -3,6 +3,9 @@
 .. _hangman_desc: https://en.wikipedia.org/wiki/Hangman_(game)#Overview
 .. |hangman_desc| replace:: Hangman description
 
+.. _enter_key: https://en.wikipedia.org/wiki/Enter_key
+.. |enter_key| replace:: ``Enter`` key
+
 Chapter II: Hangman
 ===================
 
@@ -39,7 +42,20 @@ can be broken by a ``break`` :doc:`keyword <keywords>`.
 We can see that the amount of attempts is a value that won't change, therefore
 we can declare it as a constant with ``const`` :doc:`keyword <keywords`. Unlike
 ordinary variables a value to a ``const`` is assigned via ``=`` instead of
-``:=``.
+``:=`` and can't be changed.
 
 .. include:: vsource/hangman-game-exit-const.v
+   :code: v
+
+Next we retrieve a user input so we can. If the length of the input is ``1`` we
+will treat it as guessing a character from the whole word and display all its
+occurences if the character is present. If the input is longer than one
+character, player is guessing the whole word and only if the word matches we
+display it. For any other case just take it as a failed attempt.
+
+For user input import |module_os|_, then use its |os_get_line|_ function to
+retrieve a single line from console - or in other words an input terminated by
+a single |enter_key|_.
+
+.. include:: vsource/hangman-user-input.v
    :code: v
