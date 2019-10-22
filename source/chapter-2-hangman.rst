@@ -26,3 +26,12 @@ always guessing either a letter or the whole hidden word until a player makes
 mistakes and unfold all places of a guessed letter. The game ends either by
 providing a correct word, guessing all letters correctly or at player's 6th
 mistake.
+
+Let's define the game ending conditions first as having 6 user attempts total,
+wrap checking for the user attempt in an infinite loop and then stopping the
+game loop once the conditions are not matching. An infinite loop in V is
+defined as a |for_loop|_ without any specified condition. Afterwards the loop
+can be broken by a ``break`` :doc:`keyword <keywords>`.
+
+.. include:: vsource/hangman-game-exit.v
+   :code: v
