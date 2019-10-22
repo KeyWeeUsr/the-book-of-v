@@ -35,3 +35,11 @@ can be broken by a ``break`` :doc:`keyword <keywords>`.
 
 .. include:: vsource/hangman-game-exit.v
    :code: v
+
+We can see that the amount of attempts is a value that won't change, therefore
+we can declare it as a constant with ``const`` :doc:`keyword <keywords`. Unlike
+ordinary variables a value to a ``const`` is assigned via ``=`` instead of
+``:=``.
+
+.. include:: vsource/hangman-game-exit-const.v
+   :code: v

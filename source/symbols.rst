@@ -50,3 +50,6 @@
 
 .. _in_kw: https://vlang.io/docs#in
 .. |in_kw| replace:: ``in`` keyword
+
+.. _const_kw: https://vlang.io/docs#consts
+.. |const_kw| replace:: ``const`` keyword
