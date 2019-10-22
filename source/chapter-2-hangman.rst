@@ -67,3 +67,10 @@ characters in the same length as the guess word. That's easily achievable with
 
 .. include:: vsource/hangman-mask-word.v
    :code: v
+
+If a player guesses correctly, go through the variable which stores ``hangman``
+word, find each occurence of the character and replace the ``-`` characters
+with uncovered ones according to the position in the original word.
+
+.. include:: vsource/hangman-simple-guess.v
+   :code: v
