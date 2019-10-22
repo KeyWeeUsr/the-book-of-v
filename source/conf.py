@@ -22,7 +22,7 @@ copyright = '2019, Peter Badida'
 author = 'Peter Badida'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '0.1.1'
 version = release
 
 

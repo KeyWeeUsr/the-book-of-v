@@ -155,6 +155,9 @@ check the number of elements in the ``stack`` array by its ``len`` attribute
 as we did for popping the values from it in previous example and then exit the
 program with a warning for which we'll use |panic|_.
 
+We can concat a variable, to a different string by using ``$`` symbol and
+a name of a variable in a string like this: ``println("Value: $my_variable")``.
+
 .. include:: vsource/calculator-main-check-stack.v
    :code: v
 
