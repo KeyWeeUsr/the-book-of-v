@@ -30,6 +30,9 @@
 .. _string_f32: https://github.com/vlang/v/blob/333f0ab89f22846e1023d1ab6b1deec5fde592ad/vlib/builtin/string.v#L193
 .. |string_f32| replace:: ``string.f32(s string)``
 
+.. _string_repeat: https://github.com/vlang/v/blob/7696a600f6fc978ec655feea6d54a14c0d38caab/vlib/builtin/string.v#L1077
+.. |string_repeat| replace:: ``string.repeat(count int)``
+
 .. _array_type: https://vlang.io/docs#arrays
 .. |array_type| replace:: ``array``
 

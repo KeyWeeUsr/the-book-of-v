@@ -59,3 +59,11 @@ a single |enter_key|_.
 
 .. include:: vsource/hangman-user-input.v
    :code: v
+
+Once we have the input available, let's add a sample word ``hangman`` to
+a variable. Then create a mask of that word, a value constructed of ``-``
+characters in the same length as the guess word. That's easily achievable with
+|string_repeat|_ function.
+
+.. include:: vsource/hangman-mask-word.v
+   :code: v
