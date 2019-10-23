@@ -96,3 +96,12 @@ the function declaration and the result should look like this:
 
 .. include:: vsource/hangman-guess-function.v
    :code: v
+
+For the conditions of word matching and attempts we create ``check_continue()``
+function and make it return a ``bool`` :doc:`type <types>` so the |for_loop|_
+can automatically check the value and exit game loop when necessary. Similarly
+for the match of the guessed word and already uncovered letters we create
+``check_win()`` function so the logic is kept at one place.
+
+.. include:: vsource/hangman-check-functions.v
+   :code: v

@@ -25,6 +25,12 @@ Numeric
 * ``f32`` - 32-bit floating-point number (see |f32_impl|_)
 * ``byte`` - 8-bit unsigned number, the smallest piece of memory which can
   contain basic character set such as |ascii_charset|_ (see |byte_impl|_)
+* ``bool`` - numeric type using ``false`` as negative value and ``true`` as
+  positive (currently inherited from C implementation)
+
+Textual
+~~~~~~~
+
 * ``string`` - A read-only, immutable, array of bytes encoded using UTF-8
   (see |string_type|_ for more)
 
