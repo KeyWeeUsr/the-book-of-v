@@ -82,3 +82,17 @@ Notice the sections where the ``str()`` function is called. While a word is
 stored as a |string_type|_, that's in simple terms just an |array_type|_ of
 ``byte`` :doc:`types <types>`. A ``byte`` on the other hand is so similar to an
 ``int`` that the ``str()`` function is the same for both - |int_str|_.
+
+Improvements
+------------
+
+If we look properly at this large game loop, we can see multiple parts that
+can be pulled out into separate functions which will increase the readability
+of the overall code. Let's move the code working with user input and name it as
+``guess()`` function. This function will take multiple |string_type|_
+parameters and also return one |string_type|_. We reflect those properties to
+the function declaration and the result should look like this:
+``fn guess(input string, word string, mask string) string``.
+
+.. include:: vsource/hangman-guess-function.v
+   :code: v
