@@ -105,3 +105,9 @@ for the match of the guessed word and already uncovered letters we create
 
 .. include:: vsource/hangman-check-functions.v
    :code: v
+
+Finally, we move out the game summary prints to ``print_summary()`` function,
+clean unnecessary variables and add spacing between code lines.
+
+.. include:: vsource/hangman-improved.v
+   :code: v
