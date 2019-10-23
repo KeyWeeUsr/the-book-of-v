@@ -40,9 +40,9 @@ can be broken by a ``break`` :doc:`keyword <keywords>`.
    :code: v
 
 We can see that the amount of attempts is a value that won't change, therefore
-we can declare it as a constant with ``const`` :doc:`keyword <keywords`. Unlike
-ordinary variables a value to a ``const`` is assigned via ``=`` instead of
-``:=`` and can't be changed.
+we can declare it as a constant with ``const`` :doc:`keyword <keywords>`.
+Unlike ordinary variables a value to a ``const`` is assigned via ``=`` instead
+of ``:=`` and can't be changed.
 
 .. include:: vsource/hangman-game-exit-const.v
    :code: v
