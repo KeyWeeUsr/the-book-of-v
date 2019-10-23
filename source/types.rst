@@ -1,5 +1,8 @@
 .. include:: symbols.rst
 
+.. _ascii_charset: https://en.wikipedia.org/wiki/ASCII#Character_set
+.. |ascii_charset| replace:: ``ASCII`` Character set
+
 Types
 =====
 
@@ -20,6 +23,8 @@ Numeric
      See `#2480 <https://github.com/vlang/v/issues/2480>`_ for more.
 
 * ``f32`` - 32-bit floating-point number (see |f32_impl|_)
+* ``byte`` - 8-bit unsigned number, the smallest piece of memory which can
+  contain basic character set such as |ascii_charset|_ (see |byte_impl|_)
 * ``string`` - A read-only, immutable, array of bytes encoded using UTF-8
   (see |string_type|_ for more)
 

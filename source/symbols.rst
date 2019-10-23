@@ -33,6 +33,15 @@
 .. _string_repeat: https://github.com/vlang/v/blob/7696a600f6fc978ec655feea6d54a14c0d38caab/vlib/builtin/string.v#L1077
 .. |string_repeat| replace:: ``string.repeat(count int)``
 
+.. _byte_impl: https://github.com/vlang/v/blob/14c273f273c2bd8bff1d0cb2f775ec755e43455c/vlib/compiler/cheaders.v#L115
+.. |byte_impl| replace:: ``byte`` implementation
+
+.. _int_str: https://github.com/vlang/v/blob/14c273f273c2bd8bff1d0cb2f775ec755e43455c/vlib/builtin/int.v#L180
+.. |int_str| replace:: ``int.str(c byte)``
+
+.. _byte_str: int_str_
+.. |byte_str| replace:: ``byte.str(c byte)``
+
 .. _array_type: https://vlang.io/docs#arrays
 .. |array_type| replace:: ``array``
 

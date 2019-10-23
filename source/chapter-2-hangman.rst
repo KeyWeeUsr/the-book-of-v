@@ -74,3 +74,8 @@ with uncovered ones according to the position in the original word.
 
 .. include:: vsource/hangman-simple-guess.v
    :code: v
+
+Notice the sections where the ``str()`` function is called. While a word is
+stored as a |string_type|_, that's in simple terms just an |array_type|_ of
+``byte`` :doc:`types <types>`. A ``byte`` on the other hand is so similar to an
+``int`` that the ``str()`` function is the same for both - |int_str|_.
