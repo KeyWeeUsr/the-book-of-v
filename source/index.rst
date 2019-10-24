@@ -32,5 +32,4 @@ Feel free to buy me a coffee |donate|_
 Indices and tables
 ==================
 
-* :ref:`genindex`
 * :ref:`search`
