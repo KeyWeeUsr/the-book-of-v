@@ -1,3 +1,7 @@
 div.sphinxsidebar a {
     font-size: 90%;
 }
+
+img.logo {
+    max-width: 64px;
+}

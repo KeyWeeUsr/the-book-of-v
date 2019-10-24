@@ -56,7 +56,10 @@ html_theme_options = dict(
     donate_url="https://paypal.me/peterbadida",
     extra_nav_links={
         f"Version: {release}": "#"
-    }
+    },
+    logo="v-logo-6b53363.svg",
+    logo_name=True,
+    logo_text_align="center"
 )
 
 # Add any paths that contain custom static files (such as style sheets) here,
