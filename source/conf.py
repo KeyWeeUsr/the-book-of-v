@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'The Book of V'
-copyright = '2019, Peter Badida'
+copyright = '2019, Peter Badida; V logo: Don Alfons Nisnoni'
 author = 'Peter Badida'
 
 # The full version, including alpha/beta/rc tags
