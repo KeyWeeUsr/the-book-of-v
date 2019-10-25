@@ -61,6 +61,12 @@ html_theme_options = dict(
     logo_name=True,
     logo_text_align="center"
 )
+epub_title = project
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+epub_theme = "alabaster"
+epub_cover = ("_static/v-logo-6b53363.svg", "epub-cover.html")
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

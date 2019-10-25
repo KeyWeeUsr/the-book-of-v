@@ -5,3 +5,33 @@ div.sphinxsidebar a {
 img.logo {
     max-width: 64px;
 }
+
+div.epub-cover-container {
+    position: fixed;
+    left: 50%;
+}
+
+div.epub-cover-container .epub-cover-item {
+    position: relative;
+    left: -50%;
+    width: 50vw;
+    text-align: center;
+}
+
+div.epub-cover-container .epub-cover-item .epub-cover-container {
+    position: absolute;
+    left: -50%;
+    text-align: center;
+}
+
+img.epub-logo {
+    width: 50%;
+}
+
+h1.epub-title {
+    color: #3E4349;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 5vw;
+    text-align: center;
+}
