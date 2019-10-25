@@ -1,5 +1,6 @@
 .. _donate: https://paypal.me/peterbadida
-.. |donate| image:: https://img.shields.io/badge/donate-%E2%9D%A4%C2%A0-ff69b4.svg?style=flat
+.. |donate| image::
+   https://img.shields.io/badge/donate-%E2%9D%A4%C2%A0-ff69b4.svg
 
 .. include:: symbols.rst
 
