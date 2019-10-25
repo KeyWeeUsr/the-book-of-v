@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{%- block footer %}{% endblock %}
+{% block content %}
+    <div class="epub-cover-container">
+        <div class="epub-cover-item">
+            <div class="epub-logo-container">
+                <img class="epub-logo" src="{{ image }}" alt="Cover image" />
+                <h1 class="epub-title">{{ title }}</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
