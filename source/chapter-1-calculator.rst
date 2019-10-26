@@ -338,7 +338,7 @@ back to the console.
 
    Optimal result is having only a single element present on the stack, however
    it can happen that there will be an additional result if we provide more
-   values than operands + 1.
+   values than ``operators + 1``.
 
 .. index::
    single: solution
