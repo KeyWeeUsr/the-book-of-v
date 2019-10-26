@@ -9,6 +9,10 @@
 Chapter I: Calculator
 =====================
 
+.. index::
+   single: first program
+   single: calculator
+
 For the first program (except Hello world of course!) let's create a simple CLI
 calculator. We start with a clean file in your favorite text editor:
 
@@ -17,6 +21,11 @@ calculator. We start with a clean file in your favorite text editor:
 
 Operations
 ----------
+
+.. index::
+   single: operation
+   single: addition
+   single: integer
 
 We'll start with the addition. In V a function is created by ``fn``
 :doc:`keyword <keywords>` and a basic numeric :doc:`type <types>` "integer"
@@ -31,6 +40,13 @@ If we run the file:
 
     v run calc.v
 
+.. index::
+   single: entrypoint
+   single: executable
+   single: computer
+   single: main
+   single: println
+
 nothing happens because we are missing the entrypoint for the executable,
 or simply said, a place where computer should begin the execution of a program.
 In V the entrypoint is known as a ``main`` function declared as ``fn main()``.
@@ -40,11 +56,19 @@ in the console. For that we'll use a built-in |println|_ function:
 .. include:: vsource/calculator-add-int.v
    :code: v
 
+.. index::
+   single: add
+
 Now we can see the output. Let's include the rest of ``+-*/`` operations
 in the same way we created ``add()`` function:
 
 .. include:: vsource/calculator-basic-ops.v
    :code: v
+
+.. index::
+   single: basic
+   single: strange
+   single: integer division
 
 As we call each of the functions to perform a basic operation, we will see
 this output. Noticed something strange?
@@ -72,14 +96,25 @@ Nice, we can see a proper result for ``1 / 2`` operation.
 Input
 -----
 
+.. index::
+   single: hard-coded
+
 We can see the program computing results, but it's only for the hard-coded
 values directly in the ``calc.v`` file. This way we'd always need to rewrite
 our calculator.
+
+.. index::
+   single: compilation
 
 As you've already noticed when running a V program, V already knows what file
 you want to use by you providing a filename in the console. The same way V
 can use your value for compiling we can use it for computing results. The input
 values can be fetched with the help of |module_os|_ module.
+
+.. index::
+   single: importing
+   single: os
+   single: arguments
 
 In V you can use a module by *importing* it via ``import``
 :doc:`keyword <keywords>`. From that module we will need a constant
@@ -94,6 +129,11 @@ program the same as below:
 
 .. include:: vsource/calculator-basic-ops-float-withinput-output.v
    :code: v
+
+.. index::
+   single: executable
+   single: argument
+   single: path
 
 The first argument will always be a name of the executable that's running,
 which in this case means ``./calc``, and anything other added after the path
@@ -112,6 +152,11 @@ to the executable is added as the next argument.
 Pseudo-stack with |array_type|_
 -------------------------------
 
+.. index::
+   single: Reverse Polish notation
+   single: stack
+   single: pseudo-stack
+
 Once we can access the console arguments, we can quickly implement so called
 |rpn|_ with a |for_loop|_, |if_cond|_ and |stack_wiki|_.
 
@@ -119,6 +164,14 @@ First we skip the executable path:
 
 .. include:: vsource/strip-exe-path.v
    :code: v
+
+.. index::
+   single: array
+   single: stack
+   single: pseudo-stack
+   single: array declaration
+   single: syntax
+   single: immutable
 
 To implement |rpn|_ we will use an |array_type|_ as a pseudo-|stack_wiki|_
 structure for storing the ``f32``. To create a variable V uses a simple
@@ -129,8 +182,22 @@ in it as ``<name> := []<type>``.
 .. include:: vsource/array-f32-immutable-assign.v
    :code: v
 
+.. index::
+   single: mut
+   single: mutable
+   single: editable
+   single: operator
+   single: shift
+   single: left shift
+
 After we use a :doc:`keyword <keywords>` ``mut``, we mark the variable as
 editable and can use ``<<`` operator for the array to append a new value to it.
+
+.. index::
+   single: pop
+   single: element
+   single: delete
+   single: remove
 
 Currently there is no quick way for popping the last element from an array
 while removing it at the same time, therefore we will access the last element
@@ -140,14 +207,33 @@ by its position in angle brackets (``array[idx]``) in the array and then use
 .. include:: vsource/array-f32-push-pop.v
    :code: v
 
+.. index::
+   single: len
+   single: length
+   single: resizing
+   single: manipulation
+
 As you can see, an |array_type|_ has an |array_len|_. It's changed on each
 resizing manipulation of |array_type|_.
+
+.. index::
+   single: push
+   single: remove
+   single: Reverse Polish notation
 
 Back to the calculator code, we will use this pseudo-|stack_wiki|_ with
 manually pushing and removing items to implement |rpn|_ from console arguments.
 
+.. index::
+   single: buckets
+   single: precedence
+
 We'll create two array "buckets" for two categories of operators according to
 their precedence in an ordinary calculator.
+
+.. index::
+   single: warning
+   single: panic
 
 After that let's take care of an obvious error that might be raised - calling
 an operator function when there isn't enough values on the stack. We need to
@@ -155,11 +241,22 @@ check the number of elements in the ``stack`` array by its ``len`` attribute
 as we did for popping the values from it in previous example and then exit the
 program with a warning for which we'll use |panic|_.
 
+.. index::
+   single: concat
+   single: formatting
+   single: dollar symbol
+
 We can concat a variable, to a different string by using ``$`` symbol and
 a name of a variable in a string like this: ``println("Value: $my_variable")``.
 
 .. include:: vsource/calculator-main-check-stack.v
    :code: v
+
+.. index::
+   single: arguments
+   single: stack
+   single: conversion
+   single: cast
 
 Now let's append the console arguments on the stack if they are not one of
 the operator functions' names we added to the arrays. By default any value from
@@ -167,6 +264,9 @@ the console arguments is a |string_type|_ which means we are missing one step.
 We need to convert the value to ``f32`` before appending it. By looking at the
 |string_impl|_ we can find its function for conversion |string_f32|_ which we
 should use before trying to append the value on the stack.
+
+.. index::
+   single: conversion
 
 Once the values are converted and on the stack, we need to check if there are
 at least two and in the next console argument is an operator function's name
@@ -176,10 +276,19 @@ printing out the result.
 .. include:: vsource/calculator-main-calc-values.v
    :code: v
 
+.. index::
+   single: instructions
+   single: calculator
+
 Now we can check some basic instructions for our calculator this way:
 
 .. include:: vsource/calculator-main-calc-values-output.v
    :code: v
+
+.. index::
+   single: limited
+   single: operations
+   single: instructions
 
 Although usable, it's very limited as it does not provide any option for joined
 operations such as ``(1 + 2) * (3 / (4 + 5))``. First we need to convert this
@@ -211,6 +320,14 @@ function.
     1
     = 1
 
+.. index::
+   single: rework
+   single: result
+   single: handling
+   single: operator
+   single: arguments
+   single: console
+
 For that we need to rework the result handling a bit and put it on stack
 instead of printing out right away - switch ``println(operator(left, right))``
 to ``stack << operator(left, right)`` and then, after the computation is done,
@@ -222,6 +339,9 @@ back to the console.
    Optimal result is having only a single element present on the stack, however
    it can happen that there will be an additional result if we provide more
    values than operands + 1.
+
+.. index::
+   single: solution
 
 Here is the complete solution. Obviously it can be optimized and refactored
 further, but that I've kept for you to have fun.

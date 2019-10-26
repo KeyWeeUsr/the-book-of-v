@@ -4,6 +4,10 @@
 
 .. include:: symbols.rst
 
+.. index::
+   single: Introduction
+   single: Book
+
 The Book of V
 =============
 

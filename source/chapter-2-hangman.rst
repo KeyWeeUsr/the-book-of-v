@@ -9,6 +9,9 @@
 Chapter II: Hangman
 ===================
 
+.. index::
+   single: hangman
+
 After the first chapter you should know how to use :doc:`keywords <keywords>`
 ``fn`` and ``mut``, :doc:`types <types>` ``int``, ``f32``, |string_type|_,
 |array_type|_ as well as converting |string_type|_ input to ``f32`` and some
@@ -16,6 +19,11 @@ basic |array_type|_ operations with ``<<``, |array_len|_ and |array_delete|_.
 
 Game loop
 ---------
+
+.. index::
+   single: game loop
+   single: game
+   single: word
 
 In this chapter we will create a Hangman game that will pick a random word from
 a predefined array of values. As for any common game, we need to create a loop
@@ -25,6 +33,13 @@ action if necessary.
 .. include:: vsource/hangman-game-loop.v
    :code: v
 
+.. index::
+   single: mistakes
+   single: guess
+   single: correct
+   single: word
+   single: letters
+
 To define what should be present in the game loop we need to check the
 |hangman_desc|_. So according to that, the game loop should have a player
 always guessing either a letter or the whole hidden word until a player makes
@@ -32,6 +47,13 @@ always guessing either a letter or the whole hidden word until a player makes
 mistakes and unfold all places of a guessed letter. The game ends either by
 providing a correct word, guessing all letters correctly or at player's 6th
 mistake.
+
+.. index::
+   single: conditions
+   single: attempts
+   single: infinite
+   single: for
+   single: break
 
 Let's define the game ending conditions first as having 6 user attempts total,
 wrap checking for the user attempt in an infinite loop and then stopping the
@@ -42,6 +64,9 @@ can be broken by a ``break`` :doc:`keyword <keywords>`.
 .. include:: vsource/hangman-game-exit.v
    :code: v
 
+.. index::
+   single: const
+
 We can see that the amount of attempts is a value that won't change, therefore
 we can declare it as a constant with ``const`` :doc:`keyword <keywords>`.
 Unlike ordinary variables a value to a ``const`` is assigned via ``=`` instead
@@ -50,11 +75,19 @@ of ``:=`` and can't be changed.
 .. include:: vsource/hangman-game-exit-const.v
    :code: v
 
+.. index::
+   single: character
+   single: match
+
 Next we retrieve a user input so we can. If the length of the input is ``1`` we
 will treat it as guessing a character from the whole word and display all its
 occurences if the character is present. If the input is longer than one
 character, player is guessing the whole word and only if the word matches we
 display it. For any other case just take it as a failed attempt.
+
+.. index::
+   single: os
+   single: get_line
 
 For user input import |module_os|_, then use its |os_get_line|_ function to
 retrieve a single line from console - or in other words an input terminated by
@@ -63,6 +96,10 @@ a single |enter_key|_.
 .. include:: vsource/hangman-user-input.v
    :code: v
 
+.. index::
+   single: mask
+   single: repeat
+
 Once we have the input available, let's add a sample word ``hangman`` to
 a variable. Then create a mask of that word, a value constructed of ``-``
 characters in the same length as the guess word. That's easily achievable with
@@ -70,6 +107,9 @@ characters in the same length as the guess word. That's easily achievable with
 
 .. include:: vsource/hangman-mask-word.v
    :code: v
+
+.. index::
+   single: occurence
 
 If a player guesses correctly, go through the variable which stores ``hangman``
 word, find each occurence of the character and replace the ``-`` characters
