@@ -151,3 +151,8 @@ clean unnecessary variables and add spacing between code lines.
 
 .. include:: vsource/hangman-improved.v
    :code: v
+
+While the current state of the game is workable, we still need to make it
+dynamic otherwise the game would be always the same and after the first try
+everyone knows the answer. We can solve this by using a file named
+``words.txt`` which will contain guess words one per each line.
