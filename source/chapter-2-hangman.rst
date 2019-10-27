@@ -184,3 +184,6 @@ Once the seed is set we can call |rand_next|_. Now change the hard-coded
 guess word in ``game_loop()`` into ``load_word("words.txt")`` and create a file
 named ``words.txt`` in the same folder as is the hangman ``.v`` file. You can
 find a sample file in the :doc:`appendix` section.
+
+.. include:: vsource/hangman-complete.v
+   :code: v
