@@ -156,3 +156,11 @@ While the current state of the game is workable, we still need to make it
 dynamic otherwise the game would be always the same and after the first try
 everyone knows the answer. We can solve this by using a file named
 ``words.txt`` which will contain guess words one per each line.
+
+To read lines from a file on your operating system use |os_read_lines|_
+function. Specify just the name of the file to open it from the current
+"working" directory or in other words, from the folder you run your program
+from.
+
+.. include:: vsource/hangman-load-word.v
+   :code: v

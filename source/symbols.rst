@@ -19,9 +19,9 @@
    fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L540
 .. |os_get_line| replace:: ``os.get_line()``
 
-.. _os_open: https://github.com/vlang/v/blob/
-   fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L191
-.. |os_open| replace:: ``os.open(path string)``
+.. _os_read_lines: https://github.com/vlang/v/blob/
+   fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L142
+.. |os_read_lines| replace:: ``os.read_lines(path string)``
 
 .. _int_impl: https://github.com/vlang/v/blob/
    f46b58b09d928bf71800d89a9ef563fd66e365d9/vlib/builtin/int.v
