@@ -178,7 +178,7 @@ because a randomness *seed* needs to be different on each run. For that import
 
 Since |rand_seed|_ requires an ``int`` :doc:`type <types>` we can convert the
 |time_Time|_ into a UNIX timestamp which is a number we can safely use for
-seeding in this particular case.
+seeding in this particular case. |time_Time|_ stores it in |time_Time_uni|_.
 
 Once the seed is set we can call |rand_next|_. Now change the hard-coded
 guess word in ``game_loop()`` into ``load_word("words.txt")`` and create a file
