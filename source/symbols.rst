@@ -31,6 +31,18 @@
    f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/rand/rand.v#L11
 .. |rand_next| replace:: ``rand.next(max int)``
 
+.. _rand_seed: https://github.com/vlang/v/blob/
+   f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/rand/rand.v#L11
+.. |rand_seed| replace:: ``rand.seed(s int)``
+
+.. _module_time: https://github.com/vlang/v/tree/
+   f7c00b818074689b5d87c1c571f0de5832820a7e/vlib/time
+.. |module_time| replace:: ``time``
+
+.. _time_now: https://github.com/vlang/v/blob/
+   1ac162635781af7069c6490d821d8b05aea87c5b/vlib/time/time.v#L77
+.. |time_now| replace:: ``time.now()``
+
 .. _int_impl: https://github.com/vlang/v/blob/
    f46b58b09d928bf71800d89a9ef563fd66e365d9/vlib/builtin/int.v
 .. |int_impl| replace:: ``int`` implementation

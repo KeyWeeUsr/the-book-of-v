@@ -170,3 +170,13 @@ available words.
 
 .. include:: vsource/hangman-load-word.v
    :code: v
+
+If you try to include this function into the already existing game, it will
+most likely have a consistent behavior (always the same word chosen). That's
+because a randomness *seed* needs to be different on each run. For that import
+|module_time|_ and input |time_now|_ to a call setting the seed - |rand_seed|_.
+
+Once the seed is set we can call |rand_next|_. Now change the hard-coded
+guess word in ``game_loop()`` into ``load_word("words.txt")`` and create a file
+named ``words.txt`` in the same folder as is the hangman ``.v`` file. You can
+find a sample file in the :doc:`appendix` section.
