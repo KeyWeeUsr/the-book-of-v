@@ -162,5 +162,11 @@ function. Specify just the name of the file to open it from the current
 "working" directory or in other words, from the folder you run your program
 from.
 
+After the |array_type|_ of |string_type|_s is retrieved we need to pull
+a single word for the game to begin. Import |module_rand|_ and use |rand_next|_
+from it. Make sure the maximum value is set to the length of the words
+|array_type|_ to only access its item by an index within the range of
+available words.
+
 .. include:: vsource/hangman-load-word.v
    :code: v
