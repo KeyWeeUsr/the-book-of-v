@@ -43,6 +43,10 @@
    1ac162635781af7069c6490d821d8b05aea87c5b/vlib/time/time.v#L77
 .. |time_now| replace:: ``time.now()``
 
+.. _time_Time: https://github.com/vlang/v/blob/
+   1ac162635781af7069c6490d821d8b05aea87c5b/vlib/time/time.v#L47
+.. |time_Time| replace:: ``time.Time``
+
 .. _int_impl: https://github.com/vlang/v/blob/
    f46b58b09d928bf71800d89a9ef563fd66e365d9/vlib/builtin/int.v
 .. |int_impl| replace:: ``int`` implementation

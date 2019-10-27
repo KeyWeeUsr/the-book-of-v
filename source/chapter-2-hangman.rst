@@ -176,6 +176,10 @@ most likely have a consistent behavior (always the same word chosen). That's
 because a randomness *seed* needs to be different on each run. For that import
 |module_time|_ and input |time_now|_ to a call setting the seed - |rand_seed|_.
 
+Since |rand_seed|_ requires an ``int`` :doc:`type <types>` we can convert the
+|time_Time|_ into a UNIX timestamp which is a number we can safely use for
+seeding in this particular case.
+
 Once the seed is set we can call |rand_next|_. Now change the hard-coded
 guess word in ``game_loop()`` into ``load_word("words.txt")`` and create a file
 named ``words.txt`` in the same folder as is the hangman ``.v`` file. You can
