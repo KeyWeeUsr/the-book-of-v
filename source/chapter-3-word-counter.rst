@@ -27,3 +27,14 @@ we explicitly allow them.
 
 .. include:: vsource/word-counter-mode-struct-only.v
    :code:
+
+Once the struct is declared with name, curly brackets and its attributes it's
+ready for usage. Although there are multiple ways for populating its attributes
+with values, we'll use explicitly stated attribute names before values. This
+allows us to specify the attributes in an unordered way and it's quite
+important in the long run from the project maintainability perspective due to
+no requirement of keeping the order of the |struct|_ attributes (which may
+change by including a new feature).
+
+.. include:: vsource/word-counter-mode-struct.v
+   :code:
