@@ -114,3 +114,6 @@
 
 .. _const_kw: https://vlang.io/docs#consts
 .. |const_kw| replace:: ``const`` keyword
+
+.. _struct: https://vlang.io/docs#structs
+.. |struct| replace:: ``struct``
