@@ -22,7 +22,7 @@ copyright = '2019, Peter Badida; V logo: Don Alfons Nisnoni'
 author = 'Peter Badida'
 
 # The full version, including alpha/beta/rc tags
-release = '0.3.0'
+release = '0.3.1'
 version = release
 
 
