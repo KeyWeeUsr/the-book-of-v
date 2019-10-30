@@ -16,7 +16,7 @@ arguments via |module_os|_ and define three modes this program will work with:
 * ``-c`` or ``--chars``
 
 .. include:: vsource/word-counter-arguments.v
-   :code:
+   :code: v
 
 To generalize the mode we create a container for it - a |struct|_ - with
 ``struct`` :doc:`keyword <keywords>`. The container will hold the mode's
@@ -26,7 +26,7 @@ which allows us to have efficient abstractions without hacky hot-fixes unless
 we explicitly allow them.
 
 .. include:: vsource/word-counter-mode-struct-only.v
-   :code:
+   :code: v
 
 Once the struct is declared with name, curly brackets and its attributes it's
 ready for usage. Although there are multiple ways for populating its attributes
@@ -37,4 +37,4 @@ no requirement of keeping the order of the |struct|_ attributes (which may
 change by including a new feature).
 
 .. include:: vsource/word-counter-mode-struct.v
-   :code:
+   :code: v
