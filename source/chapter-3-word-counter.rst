@@ -38,3 +38,12 @@ change by including a new feature).
 
 .. include:: vsource/word-counter-mode-struct.v
    :code: v
+
+Now we can propagate each |struct|_ that's initialized out of the function.
+Although V presents itself as not having a global space for symbols,
+|const_kw|_ creates a very similar space as global one, but on the module level.
+Since we can't rewrite the value assigned as a constant, in combination with
+|import_kw|_ the module space is quite a powerful and safe feature.
+
+.. include:: vsource/word-counter-mode-const.v
+   :code: v
