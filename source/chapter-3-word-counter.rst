@@ -43,7 +43,8 @@ Now we can propagate each |struct|_ that's initialized out of the function.
 Although V presents itself as not having a global space for symbols,
 |const_kw|_ creates a very similar space as global one, but on the module level.
 Since we can't rewrite the value assigned as a constant, in combination with
-|import_kw|_ the module space is quite a powerful and safe feature.
+``import`` :doc:`keyword <keywords>` the module space is quite a powerful and
+safe feature.
 
 .. include:: vsource/word-counter-mode-const.v
    :code: v
@@ -66,6 +67,6 @@ is present on the system with |os_file_exists|_.
 .. include:: vsource/word-counter-count.v
    :code: v
 
-There is one catch with the |os_read_file|_ function, it returns an
-|option_type|_. This kind of type has to be handled in your code with an ``or``
-block that allows only specific set of :doc:`keywords <keywords>`.
+There is one catch with the |os_read_file|_ function, it returns an ``Option``
+:doc:`type <types>`. This kind of type has to be handled in your code with an
+``or`` block that allows only specific set of :doc:`keywords <keywords>`.

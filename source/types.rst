@@ -41,7 +41,6 @@ References value
 * ``array`` - structure holding pointers for a value or another pointer (see
   |array_type|_ for documentation and |array_impl|_ for implementation details)
 
-.. _option_type:
 
 ``Option`` type
 ---------------

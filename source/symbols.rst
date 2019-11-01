@@ -125,8 +125,3 @@
 
 .. _struct: https://vlang.io/docs#structs
 .. |struct| replace:: ``struct``
-
-.. _import_kw: keywords
-.. |import_kw| replace:: ``import`` keyword
-
-.. |option_type| replace:: ``Option``
