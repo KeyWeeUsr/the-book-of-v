@@ -6,7 +6,8 @@
 Types
 =====
 
-As per the `official V documentation <https://vlang.io/docs#btypes>`_.
+As per the `Basic types (official V documentation)
+<https://vlang.io/docs#btypes>`_.
 
 Stores value
 ------------
@@ -45,7 +46,8 @@ References value
 ``Option`` type
 ---------------
 
-As per the `official V documentation <https://vlang.io/docs#option>`_.
+As per the `Option types & error handling (official V documentation)
+<https://vlang.io/docs#option>`_.
 
 This kind of type is created by a ``?`` (question mark) prefix before an
 ordinary type such as |string_type|_ or an ``int`` resulting in a ``?string``
