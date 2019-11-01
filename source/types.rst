@@ -39,3 +39,12 @@ References value
 
 * ``array`` - structure holding pointers for a value or another pointer (see
   |array_type|_ for documentation and |array_impl|_ for implementation details)
+
+.. _option_type:
+
+Optional type
+-------------
+
+This kind of type is created by a ``?`` (question mark) prefix before an
+ordinary type such as |string_type|_ or an ``int`` resulting in a ``?string``
+return type for a function.

@@ -128,3 +128,5 @@
 
 .. _import_kw: keywords
 .. |import_kw| replace:: ``import`` keyword
+
+.. |option_type| replace:: ``Option``

@@ -65,3 +65,7 @@ is present on the system with |os_file_exists|_.
 
 .. include:: vsource/word-counter-count.v
    :code: v
+
+There is one catch with the |os_read_file|_ function, it returns an
+|option_type|_. This kind of type has to be handled in your code with an ``or``
+block that allows only specific set of :doc:`keywords <keywords>`.
