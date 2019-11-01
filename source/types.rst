@@ -73,3 +73,24 @@ of ``?string`` type falls back to the original ``unhandled option type`` error.
     import os
     content := os.read_file(<path>)
     println(content.str())
+
+Allowed :doc:`keywords <keywords>`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default an optional type is handled by an ``or`` block such as this:
+
+.. code:: v
+
+    import os
+    content := os.read_file(<path>) or {
+        // handle function failure
+    }
+    println(content.str())
+
+and it allows only specific set of :doc:`keywords <keywords>`:
+
+* ``return``
+* ``exit``
+* ``continue``
+* ``break``
+* ``panic``

@@ -14,3 +14,10 @@ As per the `official V documentation <https://vlang.io/docs#keywords>`_.
 * ``break`` - breaks an iteration of a |for_loop|_
 * ``const`` - declares a module-level variable that will never change (see
   |const_kw|_ for more)
+* ``return`` - returns a value from a function
+* ``exit`` - exits a program when encountered, allows user to specify the exit
+  code for operating system
+* ``continue`` - immediately skips to the next iteration of a loop
+* ``break`` - stops the loop from any further iteration
+* ``panic`` - exits a program and marks the program as unsuccessfully stopped
+  with an exit code.
