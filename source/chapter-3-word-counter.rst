@@ -70,3 +70,12 @@ is present on the system with |os_file_exists|_.
 There is one catch with the |os_read_file|_ function, it returns an ``Option``
 :doc:`type <types>`. This kind of type has to be handled in your code with an
 ``or`` block that allows only specific set of :doc:`keywords <keywords>`.
+
+Once we handle the failing function and remove unnecessary printing to the
+console the program is ready and complete.
+
+Here is a challenge for you as a reader: Currently it handles only a single
+file. Try to make it handle multiple files!
+
+.. include:: vsource/word-counter-complete.v
+   :code: v
