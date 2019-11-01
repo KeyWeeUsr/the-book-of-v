@@ -47,3 +47,12 @@ Since we can't rewrite the value assigned as a constant, in combination with
 
 .. include:: vsource/word-counter-mode-const.v
    :code: v
+
+Each mode needs some kind of configuration so the counter knows what to use for
+distinguishing between words, lines or characters. This configuration we name
+``sep`` as in ``separator`` and set it to ``<space>`` for words, ``\n`` for
+lines and ``<empty string>`` for characters. Note that the last one will count
+even ``<space>`` or ``\n`` as a character.
+
+.. include:: vsource/word-counter-sep.v
+   :code: v
