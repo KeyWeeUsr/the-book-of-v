@@ -19,6 +19,14 @@
    fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L540
 .. |os_get_line| replace:: ``os.get_line()``
 
+.. _os_read_file: https://github.com/vlang/v/blob/
+   fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L96
+.. |os_read_file| replace:: ``os.read_file(path string)``
+
+.. _os_file_exists: https://github.com/vlang/v/blob/
+   fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L460
+.. |os_file_exists| replace:: ``os.file_exists(_path string)``
+
 .. _os_read_lines: https://github.com/vlang/v/blob/
    fdfa564865331a2bda077164d804d6dc90b83498/vlib/os/os.v#L142
 .. |os_read_lines| replace:: ``os.read_lines(path string)``

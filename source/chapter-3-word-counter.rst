@@ -56,3 +56,12 @@ even ``<space>`` or ``\n`` as a character.
 
 .. include:: vsource/word-counter-sep.v
    :code: v
+
+To count we need to fetch the path from |os_args|_, open the file and process
+its contents with a counting function that will use currently active counting
+mode. To open a file |os_read_file|_ is used which returns the file contents
+and also closes the file. Nevertheless, we still need to ensure such a file
+is present on the system with |os_file_exists|_.
+
+.. include:: vsource/word-counter-count.v
+   :code: v
