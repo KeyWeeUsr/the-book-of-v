@@ -47,4 +47,27 @@ Optional type
 
 This kind of type is created by a ``?`` (question mark) prefix before an
 ordinary type such as |string_type|_ or an ``int`` resulting in a ``?string``
-return type for a function.
+return type for a function. This allows you to either return a correct value
+for this type or mark the result of a function as a failure by using
+``return none`` which forces the function caller to handle such a case with
+either a compile error ``unhandled option type: `?type``` when you try to
+access the value or a compile error saying this type does not have a method
+for performing a certain action.
+
+For example:
+
+.. code:: v
+
+    import os
+    content := os.read_file(<path>)
+    println(content)
+
+does not compile due to ```?string` needs to have method `str() string` to be
+printable``, however a conversion to |string_type|_ i.e. accessing the value
+of ``?string`` type falls back to the original ``unhandled option type`` error.
+
+.. code:: v
+
+    import os
+    content := os.read_file(<path>)
+    println(content.str())
