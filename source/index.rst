@@ -32,6 +32,7 @@ Feel free to buy me a coffee |donate|_
    chapter-1-calculator
    chapter-2-hangman
    chapter-3-word-counter
+   chapter-4-rpg
    appendix
    genindex
 
