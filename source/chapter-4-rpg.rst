@@ -19,3 +19,7 @@ a ``voidptr`` :doc:`type <types>`.
 
 Each reference value for a |struct|_ will start as a ``nil`` which is a pointer
 that stores a value ``0`` and for that there is a checker in V - |isnil|_.
+
+Let's try to create and connect these places with code:
+
+.. include:: vsource/rpg-place-tree.txt

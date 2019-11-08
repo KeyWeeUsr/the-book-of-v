@@ -1,0 +1,7 @@
+.. code::
+
+                    ___ Pile of old leaves (left)
+                   /
+   Tree (start) ---
+                   \___ Shrubbery (right) ---
+                                             \___ Bear behind Shrubbery (right)
