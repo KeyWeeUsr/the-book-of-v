@@ -35,3 +35,7 @@ h1.epub-title {
     font-size: 5vw;
     text-align: center;
 }
+
+div.body > .section > h1, h2, h3, h4, h5 {
+    text-align: left;
+}
