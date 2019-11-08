@@ -16,3 +16,6 @@ a ``voidptr`` :doc:`type <types>`.
 
 .. include:: vsource/rpg-place.v
    :code: v
+
+Each reference value for a |struct|_ will start as a ``nil`` which is a pointer
+that stores a value ``0`` and for that there is a checker in V - |isnil|_.

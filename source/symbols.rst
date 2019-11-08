@@ -125,3 +125,7 @@
 
 .. _struct: https://vlang.io/docs#structs
 .. |struct| replace:: ``struct``
+
+.. _isnil: https://github.com/vlang/v/blob/
+   06a7954298a4200d7c774e2b28a7f4d0375d562c/vlib/builtin/builtin.v#L25
+.. |isnil| replace:: ``isnil(v voidptr)``
