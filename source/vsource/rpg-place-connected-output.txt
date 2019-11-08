@@ -1,0 +1,30 @@
+.. code::
+
+    0x7ffe01a7eac0
+    {
+        name: Tree
+        left: 0x7ffe01a7ea90
+        right: 0x7ffe01a7ea60
+        previous: (nil)
+    }
+    0x7ffe01a7ea90
+    {
+        name: Pile of old leaves
+        left: (nil)
+        right: (nil)
+        previous: 0x7ffe01a7eac0
+    }
+    0x7ffe01a7ea60
+    {
+        name: Shrubbery
+        left: (nil)
+        right: 0x7ffe01a7ea30
+        previous: 0x7ffe01a7eac0
+    }
+    0x7ffe01a7ea30
+    {
+        name: Bear behind Shrubbery
+        left: (nil)
+        right: (nil)
+        previous: 0x7ffe01a7ea60
+    }

@@ -40,3 +40,10 @@ unless it encounters some other :doc:`keyword <keywords>` changing the
 
 .. include:: vsource/rpg-place-connected-struct.v
    :code: v
+
+Once that is fixed, we get an output like below (the memory addresses will be
+different). Notice the connections between each of the nodes such as Tree
+memory address (``0x7ffe01a7eac0`` in this case) being equal Shrubbery previous
+node's address.
+
+.. include:: vsource/rpg-place-connected-output.txt
