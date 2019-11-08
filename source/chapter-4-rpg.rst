@@ -28,3 +28,6 @@ Each of the place nodes can either have ``nil`` as a previous/next node or an
 initialized different place. Set the reference again by using ``&`` character
 before the symbol you want to reference, in this case an initialized place
 |struct|_.
+
+.. include:: vsource/rpg-place-connected.v
+   :code: v
