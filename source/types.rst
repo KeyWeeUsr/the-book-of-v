@@ -28,6 +28,22 @@ Numeric
   contain basic character set such as |ascii_charset|_ (see |byte_impl|_)
 * ``bool`` - numeric type using ``false`` as negative value and ``true`` as
   positive (currently inherited from C implementation)
+* ``voidptr`` - type holding a numeric value of a location in computer memory
+  regardless its type or other properties, where user is responsible for the
+  correct casting (converting) to certain types or manipulation with the value
+  stored within the memory starting on that address - offsetting the stored
+  memory address up to specified data container size (or its multiples).
+
+  Considering x86 CPU and ``int`` type having 32-bit size, the starting value
+  could be something like ``0x0000`` and the data container being an ``int``
+  would offset at ``0x0004`` or in other words 4 bytes.
+
+  .. note::
+
+     Void pointer does not have the knowledge of the offset required for
+     program to retrieve a value from ones and zeroes starting at the numeric
+     value stored in the void pointer itself i.e. void pointer does not store
+     the value's type.
 
 Textual
 ~~~~~~~

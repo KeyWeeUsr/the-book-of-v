@@ -9,10 +9,10 @@ name and links for connecting multiple place instances between themselves.
 Each place will have one previous place and two places, one on the left side
 and one on the right side.
 
-To create a link between two place structures we need to reference a |struct|_
-within itself. A symbol ``&`` (ampersand) creates a reference required within
-a |struct|_ which in the background creates a reference for memory where such
-an object is stored.
+To create a link between two place structures we need references to them and
+use such references as values. A symbol ``&`` (ampersand) creates a reference
+for a computer memory where our place |struct|_ is stored. Reference is
+a ``voidptr`` :doc:`type <types>`.
 
 .. include:: vsource/rpg-place.v
    :code: v
