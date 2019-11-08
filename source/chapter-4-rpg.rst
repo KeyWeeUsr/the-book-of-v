@@ -35,8 +35,8 @@ before the symbol you want to reference, in this case an initialized place
 Running this piece of code won't yet work due to |struct|_ fields being
 immutable. To mark them as mutable use ``mut`` :doc:`keyword <keywords>` with
 a colon (``:``) suffix. ``mut:`` will mark all fields after it as mutable
-unless it encounters some other :doc:`keyword <keyword>` changing the |struct|_
-field properties.
+unless it encounters some other :doc:`keyword <keywords>` changing the
+|struct|_ field properties.
 
 .. include:: vsource/rpg-place-connected-struct.v
    :code: v
