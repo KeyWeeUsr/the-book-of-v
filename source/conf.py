@@ -13,6 +13,8 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+from subprocess import Popen, PIPE
+from os.path import dirname, abspath, join, exists
 
 
 # -- Project information -----------------------------------------------------
@@ -22,7 +24,22 @@ copyright = '2019, Peter Badida; V logo: Don Alfons Nisnoni'
 author = 'Peter Badida'
 
 # The full version, including alpha/beta/rc tags
-release = '0.3.1'
+def find_dot_git(folder, levels=6):
+    if not levels:
+        return None
+
+    if exists(join(folder, ".git")):
+        return folder
+    else:
+        return find_dot_git(dirname(folder), levels=levels - 1)
+
+release = "<invalid>"
+with Popen(
+        ["git", "tag"],
+        stdout=PIPE,
+        cwd=find_dot_git(dirname(abspath(__file__)))
+) as proc:
+    release = proc.stdout.readlines()[-1].strip().decode("utf-8")
 version = release
 
 
