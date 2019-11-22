@@ -100,3 +100,7 @@ and replace the place properties' values printing with move functions.
 
 .. include:: vsource/rpg-move-print.v
    :code: v
+
+Here is a sample output of how it should look like.
+
+.. include:: vsource/rpg-move-output.txt
