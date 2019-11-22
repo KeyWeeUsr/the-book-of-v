@@ -83,3 +83,8 @@ achieved by ``mut`` :doc:`keyword <keywords>`.
 
 .. include:: vsource/rpg-move-fn-signature.v
    :code: v
+
+First pull some values out of the traveler instance directly and even from its
+references into variables for easier access and less repetitive code.
+
+.. include:: vsource/rpg-move-refs.v
