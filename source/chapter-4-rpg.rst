@@ -49,3 +49,17 @@ memory address (``0x7ffe01a7eac0`` in this case) being equal Shrubbery previous
 node's address.
 
 .. include:: vsource/rpg-place-connected-output.txt
+
+The places are ready, let's create a traveler who will navigate through them.
+Our traveler will for now contain a single property - location - which is
+a reference for an already existing place. This always requires a value and
+must not be ``nil``. We can achieve such behavior by initializing the |struct|_
+with a value and assigning only valid values to that property.
+
+.. include:: vsource/rpg-traveler.v
+   :code: v
+
+While assigning invalid values e.g. an incorrectly typed (or raw) value is not
+an error right now and we can happily do ``traveler.location = 0``, it will
+make the program access a part of memory which it should not be allowed to do,
+therefore will result in a ``Segmentation fault (core dumped)``.
