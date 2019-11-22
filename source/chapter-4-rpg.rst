@@ -76,3 +76,10 @@ With this block we can repeat the check for multiple directions we would like
 to travel - back, left or right - which helps with directly assigning them to
 traveler's location property since it should return either its old value or the
 new one for the desired direction if not ``nil``.
+
+The function moving our traveler will require a mutable instance of traveler
+|struct|_ and an immutable string for the direction. Mutability can again be
+achieved by ``mut`` :doc:`keyword <keywords>`.
+
+.. include:: vsource/rpg-move-fn-signature.v
+   :code: v
