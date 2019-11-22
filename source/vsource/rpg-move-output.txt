@@ -1,16 +1,18 @@
-Old location Tree
-Trying to move back
-Nothing is there.
-New location Tree
-Old location Tree
-Trying to move left
-New location Pile of old leaves
-Old location Pile of old leaves
-Trying to move back
-New location Tree
-Old location Tree
-Trying to move right
-New location Shrubbery
-Old location Shrubbery
-Trying to move back
-New location Tree
+.. code::
+
+   Old location Tree
+   Trying to move back
+   Nothing is there.
+   New location Tree
+   Old location Tree
+   Trying to move left
+   New location Pile of old leaves
+   Old location Pile of old leaves
+   Trying to move back
+   New location Tree
+   Old location Tree
+   Trying to move right
+   New location Shrubbery
+   Old location Shrubbery
+   Trying to move back
+   New location Tree
