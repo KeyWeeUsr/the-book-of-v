@@ -88,3 +88,10 @@ First pull some values out of the traveler instance directly and even from its
 references into variables for easier access and less repetitive code.
 
 .. include:: vsource/rpg-move-refs.v
+   :code: v
+
+Then complete the function by choosing the right location for traveler property
+via the place checking function and stored place references.
+
+.. include:: vsource/rpg-move.v
+   :code: v
