@@ -91,7 +91,12 @@ references into variables for easier access and less repetitive code.
    :code: v
 
 Then complete the function by choosing the right location for traveler property
-via the place checking function and stored place references.
+via the place checking function and stored place references,
 
 .. include:: vsource/rpg-move.v
+   :code: v
+
+and replace the place properties' values printing with move functions.
+
+.. include:: vsource/rpg-move-print.v
    :code: v
