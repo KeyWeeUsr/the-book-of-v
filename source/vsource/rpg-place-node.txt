@@ -1,0 +1,6 @@
+.. code::
+
+                  ___ <left>
+                 /
+   <previous> ---
+                 \___ <right>
