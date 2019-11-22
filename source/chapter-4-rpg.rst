@@ -63,3 +63,16 @@ While assigning invalid values e.g. an incorrectly typed (or raw) value is not
 an error right now and we can happily do ``traveler.location = 0``, it will
 make the program access a part of memory which it should not be allowed to do,
 therefore will result in a ``Segmentation fault (core dumped)``.
+
+By using reference for a place and its references for the neighborhood creating
+a function that will move the traveler is a piece of a cake. We just need to
+watch out for ``nil`` with a short check that both accepts and returns
+references for places.
+
+.. include:: vsource/rpg-move-nil-check.v
+   :code: v
+
+With this block we can repeat the check for multiple directions we would like
+to travel - back, left or right - which helps with directly assigning them to
+traveler's location property since it should return either its old value or the
+new one for the desired direction if not ``nil``.
