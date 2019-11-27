@@ -129,3 +129,9 @@
 .. _isnil: https://github.com/vlang/v/blob/
    06a7954298a4200d7c774e2b28a7f4d0375d562c/vlib/builtin/builtin.v#L25
 .. |isnil| replace:: ``isnil(v voidptr)``
+
+.. _methods: https://vlang.io/docs#methods
+.. |methods| replace:: methods
+
+.. _functions: https://vlang.io/docs#fns
+.. |functions| replace:: functions

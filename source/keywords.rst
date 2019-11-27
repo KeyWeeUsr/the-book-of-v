@@ -5,7 +5,33 @@ Keywords
 
 As per the `official V documentation <https://vlang.io/docs#keywords>`_.
 
-* ``fn`` - begins a function declaration
+* ``fn`` - begins a function declaration in any of these shapes:
+
+  1. Pure function without specified return :doc:`type <types>` i.e. having the
+     default ``void`` return type.
+
+     .. code::
+
+        fn name()
+        fn name(arg int, arg2 string, ...)
+
+  2. Pure function with specified return type.
+
+     .. code::
+
+        fn name() int
+        fn name(arg int, arg2 string, ...) int
+
+  3. Struct method without and with argument and result :doc:`types <types>`.
+
+     .. code::
+
+        fn (m MyStruct) name() int
+        fn (m MyStruct) name(arg int, arg2 string, ...) int
+
+   For more examples and explanation check |functions|_ and |methods|_
+   in V documentation.
+
 * ``import`` - imports a module so a program can access it and its public
   symbols such as constants, structs or functions
 * ``mut`` - makes a variable mutable (editable)
