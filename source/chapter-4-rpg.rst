@@ -104,3 +104,16 @@ and replace the place properties' values printing with move functions.
 Here is a sample output of how it should look like.
 
 .. include:: vsource/rpg-move-output.txt
+
+Any function you create with ``fn`` :doc:`keyword <keywords>` can also contain
+a special syntax before its name - a receiver - which is in simple terms just
+a specification for the compiler to allow calling that function via dot-lookup
+(using ``.`` for fetching an attribute of some entity).
+
+Using ``(variable mutability Struct)`` syntax let's make the function for
+moving accessible directly from the traveler just by moving a function argument
+slightly to the left in the function declaration. Also, don't forget to make
+the traveler mutable.
+
+.. include:: vsource/rpg-move-receiver.v
+   :code: v
